@@ -1,4 +1,7 @@
 ﻿using System;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+
 
 namespace ConsoleApp1
 {
@@ -8,8 +11,9 @@ namespace ConsoleApp1
         {
             Console.WriteLine("Hello World!");
 
+            
             // setup services
-
+            
 
             // get xml
             // parse xml
