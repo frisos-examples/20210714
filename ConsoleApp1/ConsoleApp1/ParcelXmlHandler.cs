@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
+using System.Xml.Serialization;
 
 namespace ConsoleApp1
 {
@@ -8,7 +10,9 @@ namespace ConsoleApp1
     {
         public Container Deserialize(string filePath)
         {
-            throw new NotImplementedException();
+            XmlSerializer serializer = new XmlSerializer(typeof(Container));
+            using var reader = new StreamReader(filePath);
+            return (Container)serializer.Deserialize(reader);
         }
     }
 }

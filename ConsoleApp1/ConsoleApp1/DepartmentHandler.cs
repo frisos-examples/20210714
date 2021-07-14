@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace ConsoleApp1
@@ -21,12 +22,24 @@ namespace ConsoleApp1
 
         public bool GetDepartmentByValue(decimal value, out Department department)
         {
-            throw new NotImplementedException();
+            department = departments.FirstOrDefault(d =>
+                (value > d.MinValue && value <= d.MaxValue) ||
+                (value > d.MinValue && !d.MaxValue.HasValue) ||
+                value <= d.MaxValue
+            );
+
+            return department != null;
         }
 
         public bool GetDepartmentByWeight(decimal weight, out Department department)
         {
-            throw new NotImplementedException();
+            department = departments.FirstOrDefault(d =>
+                (weight > d.MinWeight && weight <= d.MaxWeight) ||
+                (weight > d.MinWeight && !d.MaxWeight.HasValue) ||
+                weight <= d.MaxWeight 
+            );
+
+            return department != null;
         }
     }
 }
