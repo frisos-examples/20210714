@@ -19,6 +19,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Container_68465468.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Container_68465468.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

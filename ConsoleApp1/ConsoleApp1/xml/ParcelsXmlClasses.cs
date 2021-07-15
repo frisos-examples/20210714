@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Xml.Serialization;
 
-namespace ConsoleApp1
+namespace ConsoleApp1.xml
 {
 	// using System.Xml.Serialization;
 	// XmlSerializer serializer = new XmlSerializer(typeof(Container));
