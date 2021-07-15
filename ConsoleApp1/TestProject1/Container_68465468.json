@@ -23,8 +23,8 @@
               "City": "Den Haag"
             }
           },
-          "Weight": "0.02",
-          "Value": "0.0"
+          "Weight": 0.02,
+          "Value": 0.0
         },
         {
           "Sender": {
@@ -47,8 +47,8 @@
               "City": "Leiderdorp"
             }
           },
-          "Weight": "2.0",
-          "Value": "0.0"
+          "Weight": 2.0,
+          "Value": 0.0
         },
         {
           "Sender": {
@@ -71,8 +71,8 @@
               "City": "Rotterdam"
             }
           },
-          "Weight": "100.0",
-          "Value": "2000.0"
+          "Weight": 100.0,
+          "Value": 2000.0
         },
         {
           "Sender": {
@@ -94,8 +94,8 @@
               "City": "Rotterdam"
             }
           },
-          "Weight": "11",
-          "Value": "500"
+          "Weight": 11,
+          "Value": 500
         }
       ]
     }

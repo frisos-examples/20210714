@@ -31,8 +31,8 @@ namespace ConsoleApp1
     {
         public Sender Sender { get; set; }
         public Receipient Receipient { get; set; }
-        public string Weight { get; set; }
-        public string Value { get; set; }
+        public decimal Weight { get; set; }
+        public decimal Value { get; set; }
     }
 
     public class Parcels
