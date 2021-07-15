@@ -48,7 +48,7 @@ namespace ConsoleApp1
                 })
                 .ConfigureServices((host, services) => {
                     services.AddOptions();
-                    services.Configure<IEnumerable<Department>>(host.Configuration.GetSection("departments"));
+                    services.Configure<List<Department>>(host.Configuration.GetSection("departments"));
 
                     services.AddSingleton(new Arguments
                     {

@@ -8,40 +8,16 @@ namespace ConsoleApp1
 {
     public class DepartmentHandler : IDepartmentHandler
     {
-        private IEnumerable<Department> departments;
+        private List<Department> departments;
 
-        public DepartmentHandler(IOptions<IEnumerable<Department>> departmentOptions)
+        public DepartmentHandler(IOptions<List<Department>> departmentOptions)
         {
             if (departmentOptions is null)
             {
                 throw new ArgumentNullException(nameof(departmentOptions));
             }
 
-            //departments = departmentOptions.Value;
-
-            departments = new List<Department> {
-                new Department
-                {
-                    Name = "Mail",
-                    MaxWeight = 1
-                },
-                new Department
-                {
-                    Name = "Regular",
-                    MinWeight = 1,
-                    MaxWeight = 10
-                },
-                new Department
-                {
-                    Name = "Heavy",
-                    MinWeight = 10
-                },
-                new Department
-                {
-                    Name = "Insurance",
-                    MinValue = 1000
-                },
-            };
+            departments = departmentOptions.Value;
         }
 
         public bool GetDepartmentByValue(decimal value, out Department department)
