@@ -25,13 +25,13 @@ namespace ConsoleApp1
             var data = this.parcelFileHandler.Deserialize(arguments.FilePath);
             var counter = 0;
 
-            foreach(var parcel in data.parcels.Parcel)
+            foreach(var parcel in data.Parcels.Parcel)
             {
                 var baseString = $"Parcel {data.Id}_{counter} (from {parcel.Sender.Name} to {parcel.Receipient.Name})";
 
                 if (this.departmentHandler.GetDepartmentByWeight(parcel.Weight, out var weightDepartment))
                 {
-                    Console.WriteLine($"{baseString} is being handled by {weightDepartment}");
+                    Console.WriteLine($"{baseString} is being handled by {weightDepartment.Name}");
                 }
                 else
                 {
@@ -40,7 +40,7 @@ namespace ConsoleApp1
 
                 if(this.departmentHandler.GetDepartmentByValue(parcel.Value, out var valueDepartment))
                 {
-                    Console.WriteLine($"{baseString} needs to be signed off by {valueDepartment}. Value is {parcel.Value}");
+                    Console.WriteLine($"{baseString} needs to be signed off by {valueDepartment.Name}. Value is {parcel.Value}");
                 }
 
                 counter++;

@@ -1,0 +1,103 @@
+{
+  "Container": {
+    "Id": "68465468",
+    "ShippingDate": "2016-07-22T00:00:00+02:00",
+    "parcels": {
+      "Parcel": [
+        {
+          "Sender": {
+            "Name": "Klaas",
+            "Address": {
+              "Street": "Uranusstraat",
+              "HouseNumber": "22",
+              "PostalCode": "2402AE",
+              "City": "Alphen a/d Rijn"
+            }
+          },
+          "Receipient": {
+            "Name": "Piet",
+            "Address": {
+              "Street": "Schenklaan",
+              "HouseNumber": "22",
+              "PostalCode": "2497AV",
+              "City": "Den Haag"
+            }
+          },
+          "Weight": "0.02",
+          "Value": "0.0"
+        },
+        {
+          "Sender": {
+            "Name": "SITA Ypenburg B.V.",
+            "Address": {
+              "Street": "ILSY-PLantsoen",
+              "HouseNumber": "1",
+              "PostalCode": "2497GA",
+              "City": "Den Haag"
+            },
+            "CcNumber": "65465424",
+            "Type": "Company"
+          },
+          "Receipient": {
+            "Name": "Aad",
+            "Address": {
+              "Street": "Korenbloemkamp",
+              "HouseNumber": "22",
+              "PostalCode": "2353HS",
+              "City": "Leiderdorp"
+            }
+          },
+          "Weight": "2.0",
+          "Value": "0.0"
+        },
+        {
+          "Sender": {
+            "Name": "SITA Ypenburg B.V.",
+            "Address": {
+              "Street": "ILSY-PLantsoen",
+              "HouseNumber": "1",
+              "PostalCode": "2497GA",
+              "City": "Den Haag"
+            },
+            "CcNumber": "65465424",
+            "Type": "Company"
+          },
+          "Receipient": {
+            "Name": "Martijn",
+            "Address": {
+              "Street": "Burgemeester Roosstraat",
+              "HouseNumber": "33",
+              "PostalCode": "3035 AC",
+              "City": "Rotterdam"
+            }
+          },
+          "Weight": "100.0",
+          "Value": "2000.0"
+        },
+        {
+          "Sender": {
+            "Name": "Aad",
+            "Address": {
+              "Street": "Korenbloemkamp",
+              "HouseNumber": "22",
+              "PostalCode": "2353HS",
+              "City": "Leiderdorp"
+            },
+            "Type": "Company"
+          },
+          "Receipient": {
+            "Name": "Martijn",
+            "Address": {
+              "Street": "Burgemeester Roosstraat",
+              "HouseNumber": "33",
+              "PostalCode": "3035 AC",
+              "City": "Rotterdam"
+            }
+          },
+          "Weight": "11",
+          "Value": "500"
+        }
+      ]
+    }
+  }
+}

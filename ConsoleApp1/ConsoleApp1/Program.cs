@@ -18,20 +18,6 @@ namespace ConsoleApp1
             var host = CreateHostBuilder(args).Build();
 
             host.Run();
-
-            // get xml
-            // parse xml
-
-
-            // handle parcels:
-
-            // if weight up to x (1) handle by department y (mail)
-            // if weight up to x (10) handle by department y (regular)
-            // if weight over x (10) handle by department y (heavy)
-
-            // if value more than x (1000) sign of by department y (insurance)
-
-            // if parcel not handled, give warning
         }
         static IHostBuilder CreateHostBuilder(string[] args)
         {
@@ -60,9 +46,11 @@ namespace ConsoleApp1
                     switch(fileExtension)
                     {
                         case ".xml":
+                            Console.WriteLine("Using ParcelXmlHandler");
                             services.AddScoped<IParcelFileHandler, ParcelXmlHandler>();
                             break;
                         case ".json":
+                            Console.WriteLine("Using ParcelJsonHandler");
                             services.AddScoped<IParcelFileHandler, ParcelJsonHandler>();
                             break;
                         default:
