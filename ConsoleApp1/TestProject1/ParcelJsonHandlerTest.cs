@@ -28,7 +28,7 @@ namespace TestProject1
                 var result = parcelJsonHandler.Deserialize(filePath);
 
                 Assert.IsNotNull(result);
-                Assert.AreEqual("68465468", result.Id);
+                Assert.AreEqual(68465468, result.Id);
             }
         }
     }

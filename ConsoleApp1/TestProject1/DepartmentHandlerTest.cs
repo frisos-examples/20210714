@@ -21,7 +21,7 @@ namespace TestProject1
         [TestClass]
         public class MethodHappyFlows
         {
-            private Mock<IOptions<IEnumerable<Department>>> departmentOptionsMock;
+            private Mock<IOptions<List<Department>>> departmentOptionsMock;
             private DepartmentHandler departmentHandler;
 
             [TestInitialize]
@@ -55,7 +55,7 @@ namespace TestProject1
                     }
                 };
 
-                departmentOptionsMock = new Mock<IOptions<IEnumerable<Department>>>();
+                departmentOptionsMock = new Mock<IOptions<List<Department>>>();
 
                 departmentOptionsMock.Setup(d => d.Value).Returns(_departments).Verifiable();
 
@@ -69,7 +69,7 @@ namespace TestProject1
 
             [TestClass]
             public class GetDepartmentByValue {
-                private Mock<IOptions<IEnumerable<Department>>> departmentOptionsMock;
+                private Mock<IOptions<List<Department>>> departmentOptionsMock;
                 private DepartmentHandler departmentHandler;
 
                 [TestInitialize]
@@ -103,7 +103,7 @@ namespace TestProject1
                     }
                 };
 
-                    departmentOptionsMock = new Mock<IOptions<IEnumerable<Department>>>();
+                    departmentOptionsMock = new Mock<IOptions<List<Department>>>();
 
                     departmentOptionsMock.Setup(d => d.Value).Returns(_departments).Verifiable();
 
@@ -143,7 +143,7 @@ namespace TestProject1
             [TestClass]
             public class GetDepartmentByWeight
             {
-                private Mock<IOptions<IEnumerable<Department>>> departmentOptionsMock;
+                private Mock<IOptions<List<Department>>> departmentOptionsMock;
                 private DepartmentHandler departmentHandler;
 
                 [TestInitialize]
@@ -177,7 +177,7 @@ namespace TestProject1
                     }
                 };
 
-                    departmentOptionsMock = new Mock<IOptions<IEnumerable<Department>>>();
+                    departmentOptionsMock = new Mock<IOptions<List<Department>>>();
 
                     departmentOptionsMock.Setup(d => d.Value).Returns(_departments).Verifiable();
 
@@ -253,13 +253,10 @@ namespace TestProject1
         [TestClass]
         public class MethodUnHappyFlows
         {
-            private Mock<IOptions<IEnumerable<Department>>> departmentOptionsMock;
-            private DepartmentHandler departmentHandler;
-
             [TestClass]
             public class GetDepartmentByValue
             {
-                private Mock<IOptions<IEnumerable<Department>>> departmentOptionsMock;
+                private Mock<IOptions<List<Department>>> departmentOptionsMock;
                 private DepartmentHandler departmentHandler;
 
                 [TestInitialize]
@@ -267,7 +264,7 @@ namespace TestProject1
                 {
                     var _departments = new List<Department>();
 
-                    departmentOptionsMock = new Mock<IOptions<IEnumerable<Department>>>();
+                    departmentOptionsMock = new Mock<IOptions<List<Department>>>();
 
                     departmentOptionsMock.Setup(d => d.Value).Returns(_departments).Verifiable();
 
@@ -307,7 +304,7 @@ namespace TestProject1
             [TestClass]
             public class GetDepartmentByWeight
             {
-                private Mock<IOptions<IEnumerable<Department>>> departmentOptionsMock;
+                private Mock<IOptions<List<Department>>> departmentOptionsMock;
                 private DepartmentHandler departmentHandler;
 
                 [TestInitialize]
@@ -315,7 +312,7 @@ namespace TestProject1
                 {
                     var _departments = new List<Department>();
 
-                    departmentOptionsMock = new Mock<IOptions<IEnumerable<Department>>>();
+                    departmentOptionsMock = new Mock<IOptions<List<Department>>>();
 
                     departmentOptionsMock.Setup(d => d.Value).Returns(_departments).Verifiable();
 
