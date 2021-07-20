@@ -11,14 +11,22 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            try
+            {
+                var host = CreateHostBuilder(args).Build();
 
-
-            // setup services
-            var host = CreateHostBuilder(args).Build();
-
-            host.Run();
+                host.Run();
+            }
+            catch (Exception ex)
+            {
+                Console.Error.WriteLine(ex.Message);
+                if (!string.IsNullOrWhiteSpace(ex.InnerException.Message))
+                {
+                    Console.Error.WriteLine(ex.InnerException.Message);
+                }
+            }           
         }
+
         static IHostBuilder CreateHostBuilder(string[] args)
         {
             var filePath = args[0];

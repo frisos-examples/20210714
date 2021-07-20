@@ -26,7 +26,7 @@
       <Value>0.0</Value>
     </Parcel>
     <Parcel>
-      <Sender xsi:type="Company">
+      <Sender type="Company">
         <Name>SITA Ypenburg B.V.</Name>
         <Address>
           <Street>ILSY-PLantsoen</Street>
@@ -49,7 +49,7 @@
       <Value>0.0</Value>
     </Parcel>
     <Parcel>
-      <Sender xsi:type="Company">
+      <Sender type="Company">
         <Name>SITA Ypenburg B.V.</Name>
         <Address>
           <Street>ILSY-PLantsoen</Street>
@@ -72,7 +72,7 @@
       <Value>2000.0</Value>
     </Parcel>
     <Parcel>
-      <Sender xsi:type="Company">
+      <Sender type="Company">
         <Name>Aad</Name>
         <Address>
           <Street>Korenbloemkamp</Street>
